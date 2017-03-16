@@ -1,0 +1,19 @@
+{
+    "name": "dekalee/redis-swarrot-bundle",
+    "description": "The bundle for the redis adaptor for swarrot",
+    "type": "bundle",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Nicolas Thal",
+            "email": "nico.th4l@gmail.com"
+        }
+    ],
+    "require": {
+        "swarrot/swarrot-bundle": "~1.4",
+        "dekalee/redis-swarrot": "~1"
+    },
+    "autoload": {
+        "psr-4": { "Dekalee\\RedisSwarrotBundle\\": "" }
+    }
+}

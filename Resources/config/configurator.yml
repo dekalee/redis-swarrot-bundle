@@ -1,0 +1,9 @@
+parameters:
+    dekalee_redis.configurator.repost_on_timeout.class: Dekalee\RedisSwarrotBundle\Configurator\RepostOnTimeOutProcessorConfigurator
+
+services:
+    dekalee_redis.configurator.repost_on_timeout:
+        class: '%dekalee_redis.configurator.repost_on_timeout.class%'
+        arguments:
+            - '@swarrot.factory.default'
+            - '@swarrot.logger'

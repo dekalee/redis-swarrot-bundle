@@ -1,0 +1,8 @@
+parameters:
+    dekalee_redis.broker.redis.class: Dekalee\RedisSwarrotBundle\Broker\RedisFactory
+
+services:
+    dekalee_redis.broker.redis:
+        class: '%dekalee_redis.broker.redis.class%'
+        tags:
+            - { name: swarrot.provider_factory, alias: redis }
